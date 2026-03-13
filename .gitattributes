@@ -1,0 +1,21 @@
+# Explicitly define languages
+*.py linguist-language=Python
+*.vue linguist-language=Vue
+*.js linguist-language=JavaScript
+*.md linguist-documentation
+
+# Treat binary files as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+
+# Exclude documentation from language statistics if needed (though md is already documentation)
+doc/* linguist-documentation
+frontend/agent-teams-frontend/README.md linguist-documentation
+README.md linguist-documentation
+
+# Mark vendor folders
+node_modules/* linguist-vendored
+__pycache__/* linguist-vendored
